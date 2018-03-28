@@ -1,6 +1,6 @@
 # Calculator sample
 
-This example shows how to use Kotlin common module (located in [parser/src](parser/src/)) in different environments.
+This example shows how to use Kotlin common module (located in [common/](common/)) in different environments.
 Currently for
 * Android (see [android](android/))
 * iOS (see [calculator](calculator/))

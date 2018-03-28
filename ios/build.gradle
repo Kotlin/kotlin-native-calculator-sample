@@ -20,6 +20,6 @@ konanArtifacts {
 }
 
 dependencies {
-    expectedBy project(':parser')
+    expectedBy project(':common')
 }
 

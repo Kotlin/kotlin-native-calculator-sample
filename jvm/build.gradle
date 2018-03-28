@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    expectedBy project(":parser")
+    expectedBy project(":common")
 }
 
 applicationName = "KotlinCalculator"
