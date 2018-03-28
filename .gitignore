@@ -1,0 +1,14 @@
+.DS_Store
+.idea/
+*.iml
+local.properties
+.gradle
+build
+*.bc
+*.bc.o
+*.kt.S
+*.kt.exe
+*.log
+*.kexe
+*.jar
+!gradle-wrapper.jar
