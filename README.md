@@ -17,7 +17,7 @@ To build and run the Android sample do the following:
 3.  Now build and run the configuration created.
 
 ## iOS
-The iOS project compile the common library to a framework (see [ios](ios/)). The framework can be easily included in an existing iOS project (e.g. written in Swift or Objective-C)
+The iOS project compiles the common library to a framework (see [ios](ios/)). The framework can be easily included in an existing iOS project (e.g. written in Swift or Objective-C)
 
 To build and run the iOS sample do the following:
 
