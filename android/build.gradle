@@ -1,0 +1,43 @@
+buildscript {
+    ext.kotlin_version = '1.2.20'
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-platform-android'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "org.konan.calculator"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+apply plugin: 'kotlin-android'
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+
+dependencies {
+    expectedBy project(':parser')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:27.0.2"
+}
+
