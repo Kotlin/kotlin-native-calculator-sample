@@ -447,8 +447,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				KONAN_ENABLE_OPTIMIZATIONS = NO;
 				KONAN_TASK = "";
-				"KONAN_TASK[sdk=iphoneos*]" = compileKonanKotlinArithmeticParserIos_arm64;
-				"KONAN_TASK[sdk=iphonesimulator*]" = compileKonanKotlinArithmeticParserIos_x64;
+				"KONAN_TASK[sdk=iphoneos*]" = :ios:compileKonanKotlinArithmeticParserIos_arm64;
+				"KONAN_TASK[sdk=iphonesimulator*]" = :ios:compileKonanKotlinArithmeticParserIos_x64;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JetBrains.KotlinArithmeticParser;
 				PRODUCT_MODULE_NAME = "_$(PRODUCT_NAME:c99extidentifier)";
@@ -477,8 +477,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				KONAN_ENABLE_OPTIMIZATIONS = YES;
 				KONAN_TASK = "";
-				"KONAN_TASK[sdk=iphoneos*]" = compileKonanKotlinArithmeticParserIos_arm64;
-				"KONAN_TASK[sdk=iphonesimulator*]" = compileKonanKotlinArithmeticParserIos_x64;
+				"KONAN_TASK[sdk=iphoneos*]" = :ios:compileKonanKotlinArithmeticParserIos_arm64;
+				"KONAN_TASK[sdk=iphonesimulator*]" = :ios:compileKonanKotlinArithmeticParserIos_x64;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JetBrains.KotlinArithmeticParser;
 				PRODUCT_MODULE_NAME = "_$(PRODUCT_NAME:c99extidentifier)";
