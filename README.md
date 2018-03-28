@@ -6,9 +6,12 @@ Currently for
 * iOS (see [ios/calculator](ios/calculator/))
 * plain JVM (cli) (see [jvm](jvm/))
 
+## Common
+
+Common Kotlin module contains arithmetic expressions parser.
 
 ## Android App
-The common library may be used to build an Android application.
+The common module may be used in an Android application.
 
 To build and run the Android sample do the following:
 
@@ -17,7 +20,7 @@ To build and run the Android sample do the following:
 3.  Now build and run the configuration created.
 
 ## iOS
-The iOS project compiles the common library to a framework (see [ios](ios/)). The framework can be easily included in an existing iOS project (e.g. written in Swift or Objective-C)
+The iOS project compiles Kotlin module to a framework (see [ios](ios/)). The framework can be easily included in an existing iOS project (e.g. written in Swift or Objective-C)
 
 To build and run the iOS sample do the following:
 
@@ -31,16 +34,13 @@ To build and run the iOS sample do the following:
     for more info.
 3.  Now build and run the application with Xcode.
 
-The sample consists of:
-
-1.  Xcode iOS application project, written in Swift. It uses Kotlin library to
-    parse simple arithmetic expressions.
-2.  Kotlin library source code and build script. It is built into Objective-C
-    framework by invoking Gradle from custom "Run Script" build phase, and this
-    framework is imported into the Xcode project.
+The iOS application is written in Swift. It uses Kotlin module as a library.
+Kotlin module is built into Objective-C framework by invoking Gradle
+from custom "Run Script" build phase, and this framework is imported into
+the Xcode project.
 
 ## Plain JVM
-The common library can also be compiled to a JVM-application by Kotlin/JVM compiler with Gradle. 
+The common module can also be used in JVM application built by Kotlin/JVM compiler with Gradle.
 To build and run it, go to [jvm](jvm/) directory and use
 ```
 ../gradlew run
