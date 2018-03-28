@@ -2,9 +2,19 @@
 
 This example shows how to use Kotlin common module (located in [parser/src](parser/src/)) in different environments.
 Currently for
+* Android (see [android](android/))
 * iOS (see [calculator](calculator/))
 * plain JVM (cli) (see [jvm](jvm/))
-* Android (see [android](android/))
+
+
+## Android App
+The common library may be used to build an Android application.
+
+To build and run the Android sample do the following:
+
+1.  Open the root project in Android Studio
+2.  Create a new Android App configuration. Choose module `android`.
+3.  Now build and run the configuration created.
 
 ## iOS
 The iOS project compile the common library to a framework (see [ios](ios/)). The framework can be easily included in an existing iOS project (e.g. written in Swift or Objective-C)
@@ -42,12 +52,3 @@ To build the distribution:
 ```
 (the result will be available as
 `jvm/build/distributions/KotlinCalculator.zip`)
-
-## Android App
-The common library also may be used to build an Android application.
-
-To build and run the Android sample do the following:
-
-1.  Open the root project in Android Studio
-2.  Create a new Android App configuration. Choose module `android`.
-3.  Now build and run the configuration created.
