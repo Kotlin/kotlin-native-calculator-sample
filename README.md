@@ -1,17 +1,17 @@
 # Calculator sample
 
-This example shows how to use Kotlin library (located in [parser/src](parser/src/)) in different environments.
+This example shows how to use Kotlin common module (located in [parser/src](parser/src/)) in different environments.
 Currently for
 * iOS (see [calculator](calculator/))
-* plain JVM (cli) (see [jvmCliApp](jvmCliApp/))
-* Android (see [androidApp](androidApp/))
+* plain JVM (cli) (see [jvm](jvm/))
+* Android (see [android](android/))
 
 ## iOS
-The iOS project compile the library to a framework. The framework can easily included in an existing iOS project (e.g. written in Swift or Objective-C)
+The iOS project compile the common library to a framework (see [ios](ios/)). The framework can be easily included in an existing iOS project (e.g. written in Swift or Objective-C)
 
 To build and run the iOS sample do the following:
 
-1.  Open `samples/calculator/calculator.xcodeproj` with Xcode.
+1.  Open `calculator.xcodeproj` with Xcode.
 2.  Open the project's target through project navigator, go to tab 'General'.
     In 'Identity' section change the bundle ID to the unique string in
     reverse-DNS format. Then select the team in 'Signing' section.
@@ -29,33 +29,24 @@ The sample consists of:
     framework by invoking Gradle from custom "Run Script" build phase, and this
     framework is imported into the Xcode project.
 
-## Using the same code with Kotlin/JVM
-The library can also be compiled to a `.jar` by Kotlin/JVM compiler with Gradle. 
-Just run from the [library dir](parser/): 
-```
-../../gradlew jar
-```
-This will generate an `arithmetic-parser.jar` in `parser/build/libs/`.
-
 ## Plain JVM
-The plain jvm sample (written in Kotlin/JVM) will use the library as a gradle dependency.
-
-To build and run it, go to [jvmCliApp](jvmCliApp/) directory and use
+The common library can also be compiled to a JVM-application by Kotlin/JVM compiler with Gradle. 
+To build and run it, go to [jvm](jvm/) directory and use
 ```
-../../gradlew run
+../gradlew run
 ```
 
 To build the distribution:
 ```
-../../gradlew distZip
+../gradlew distZip
 ```
 (the result will be available as
-`jvmCliApp/build/distributions/KotlinCalculator.zip`)
+`jvm/build/distributions/KotlinCalculator.zip`)
 
 ## Android App
-The Android App uses - similar to the plain JVM sample - the library as a gradle dependency.
+The common library also may be used to build an Android application.
 
 To build and run the Android sample do the following:
 
-1.  Open `samples/calculator/androidApp` in Android Studio
+1.  Open `android` in Android Studio
 2.  Now build and run the androidApp application
