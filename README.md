@@ -48,5 +48,6 @@ The common library also may be used to build an Android application.
 
 To build and run the Android sample do the following:
 
-1.  Open `android` in Android Studio
-2.  Now build and run the androidApp application
+1.  Open the root project in Android Studio
+2.  Create a new Android App configuration. Choose module `android`.
+3.  Now build and run the configuration created.
