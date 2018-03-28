@@ -3,7 +3,7 @@
 This example shows how to use Kotlin common module (located in [common/](common/)) in different environments.
 Currently for
 * Android (see [android](android/))
-* iOS (see [calculator](calculator/))
+* iOS (see [ios/calculator](ios/calculator/))
 * plain JVM (cli) (see [jvm](jvm/))
 
 
@@ -21,7 +21,7 @@ The iOS project compiles the common library to a framework (see [ios](ios/)). Th
 
 To build and run the iOS sample do the following:
 
-1.  Open `calculator.xcodeproj` with Xcode.
+1.  Open `ios/calculator.xcodeproj` with Xcode.
 2.  Open the project's target through project navigator, go to tab 'General'.
     In 'Identity' section change the bundle ID to the unique string in
     reverse-DNS format. Then select the team in 'Signing' section.
