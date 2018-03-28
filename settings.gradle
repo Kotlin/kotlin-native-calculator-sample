@@ -1,0 +1,4 @@
+include ':parser'
+include ':jvm'
+include ':ios'
+include ':android'

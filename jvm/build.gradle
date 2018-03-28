@@ -1,0 +1,30 @@
+buildscript {
+    ext.kotlin_version = '1.2.31'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin-platform-jvm'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    expectedBy project(":parser")
+}
+
+applicationName = "KotlinCalculator"
+
+mainClassName = 'org.konan.calculator.JvmCliKt'
+run {
+    args "2 + 2"
+}
