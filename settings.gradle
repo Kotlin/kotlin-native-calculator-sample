@@ -1,4 +1,0 @@
-include ':common'
-include ':jvm'
-include ':ios'
-include ':android'
